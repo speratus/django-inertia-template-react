@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+{% load django_vite %}
+<html lang="en">
+	<head>
+		{% vite_hmr_client %}
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>REPLACE ME</title>
+
+		{% vite_react_refresh %}
+		{% vite_asset 'main.jsx' %}
+	</head>
+	<body>
+		{% block inertia %}
+		{% endblock %}
+	</body>
+</html>
