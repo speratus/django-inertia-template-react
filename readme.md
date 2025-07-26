@@ -26,8 +26,8 @@ At some point in the future, I may also provide a cookiecutter template that wil
 
 ## Install dependencies
 
-1. Install python dependencies. You can do this either with `pip install -r requirements.txt` or `pipenv install`. **NOTE: If you install without pipenv and have deleted the `.venv` folder, make sure you have activated a virtual environment, otherwise you will install the dependencies global.**
-2. Install JavaScript depdencies: `cd frontend` then `npm i` or `npm ci` if you want the exact versions specified in `package-lock.json`.
+1. **Install python dependencies:** You can do this either with `pip install -r requirements.txt` or `pipenv install`. **NOTE: If you install without pipenv and have deleted the `.venv` folder, make sure you have activated a virtual environment, otherwise you will install the dependencies globally.**
+2. **Install JavaScript depdencies:** `cd frontend` then `npm i` or `npm ci` if you want the exact versions specified in `package-lock.json`.
 3. **Run Migrations:** With your virtual environment activated, run `python manage.py migrate`.
 
 ## Running the development server
@@ -50,7 +50,7 @@ Configuring Django with Inertia can be a somewhat challenging experience, here a
 ### Important files
 
 The inertia template is located at `templates/inertia_layout.html`. Note the use of the `vite_*` related tags and the `{% load django_vite %}` tag near the top of the file.
-These tags are required to load the vite assets used by Inertia. There are more details on how vite is configured to integrate with Django below.
+These tags are required to load the Vite assets used by Inertia. There are more details on how Vite is configured to integrate with Django below.
 
 The `{% block inertia %}` tags are also key in integrating Django with Inertia.
 
@@ -75,7 +75,7 @@ configuration variable.
 
 This can be a rather finicky process if you do not know what to expect.
 
-If you want to allow `django_vite` to load an entrypoint script by using `{% vite_asset 'myscript.js' %}, the following criteria must be met:
+If you want to allow `django_vite` to load an entrypoint script by using `{% vite_asset 'myscript.js' %}`, the following criteria must be met:
 
 * The script file must be directly within the "root" of the project.
 * Despite this, in the `build.rollupOptions.input` map, the path to the entrypoint must be specified relative to the `vite.config.ts` file.
@@ -88,7 +88,7 @@ loaded at some point. Thus, you may find that your file is not in the
 production manifest. The easiest workaround for this is simply
 to include your entrypoint in the `build.rollupOptions.input` map to begin with.
 
-### How do I load a vite stylesheet in a Django template?
+### How do I load a Vite stylesheet in a Django template?
 
 Unlike JavaScript or TypeScript source files, you cannot use the `{% vite_asset %}` tag to load stylesheets.
 This is because the `vite_asset` tag will automatically wrap the url in a
