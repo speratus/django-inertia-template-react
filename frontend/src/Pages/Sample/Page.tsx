@@ -5,9 +5,9 @@ interface Props {
 
 export default function Page(props: Props) {
 	return (
-		<div className="m-auto">
+		<div className="m-auto p-4">
 			<h1 className="text-4xl font-bold">{props.title}</h1>
-			<p>
+			<p className="mt-4">
 				{props.content}
 			</p>
 		</div>
