@@ -2,12 +2,12 @@
 
 This is a template repository for bootstrapping an application based on the following stack:
 
-* Django
-* Inertia
-* React
-* Tailwind CSS
-* Vite
-* TypeScript
+* [Django](https://www.djangoproject.com/)
+* [Inertia](https://inertiajs.com/)
+* [React](https://react.dev/)
+* [Tailwind CSS](https://tailwindcss.com/)
+* [Vite](https://vite.dev/)
+* [TypeScript](https://www.typescriptlang.org/)
 
 ## Usage
 
