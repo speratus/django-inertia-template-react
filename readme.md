@@ -101,3 +101,10 @@ Instead, you need to include the following HTML snippet to load a stylesheet in 
 ```
 
 The `vite_asset_url` will return the bare URL to your stylesheet asset which can then be used in the `href` attribute as normal.
+
+## Notable Project dependencies
+
+In order to get Inertia working with Inertia, there are a number of dependencies you should be aware of:
+
+* [Django Inertia](https://pypi.org/project/inertia-django/)
+* [Django Vite](https://github.com/MrBin99/django-vite)
