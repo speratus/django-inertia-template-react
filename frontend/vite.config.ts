@@ -7,15 +7,15 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   base: '/static/',
-  root: 'src/',
+//  root: 'src/',
   build: {
 	  outDir: resolve('../static'),
 	  emptyOutDir: true,
 	  manifest: 'manifest.json',
 	  rollupOptions: {
 		  input: {
-			  main: 'src/main.jsx',
-			  styles: 'src/styles.css',
+			  main: resolve('./src/main.jsx'),
+			  styles: resolve('./src/styles.css'),
 		  },
 		  output: {
 			  chunkFileNames: undefined,
