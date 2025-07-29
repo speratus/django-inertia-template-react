@@ -106,5 +106,5 @@ The `vite_asset_url` will return the bare URL to your stylesheet asset which can
 
 In order to get Inertia working with Inertia, there are a number of dependencies you should be aware of:
 
-* [Django Inertia](https://pypi.org/project/inertia-django/)
+* [Inertia Django](https://pypi.org/project/inertia-django/)
 * [Django Vite](https://github.com/MrBin99/django-vite)
